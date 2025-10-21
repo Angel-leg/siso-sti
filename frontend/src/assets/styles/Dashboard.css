@@ -1,0 +1,124 @@
+/* Reset básico */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Layout general del dashboard */
+.dashboard-layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* Contenido principal */
+.main-content {
+  flex: 1;
+  padding: 2rem; /* 32px -> 2rem */
+  background: #ecf0f1;
+  overflow-y: auto;
+}
+
+/* Encabezado del dashboard */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem; /* 30px -> ~2rem */
+}
+
+/* Panel de bienvenida llamativo */
+.welcome-panel {
+  max-width: 800px;
+  width: 100%;
+  background: linear-gradient(135deg, #3d918c, #29b9b9);
+  color: white;
+  border-radius: 1rem; /* 16px */
+  box-shadow: 0 0.75rem 1.875rem rgba(0, 0, 0, 0.2); /* 12px 30px */
+  padding: 2.5rem; /* 40px */
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+}
+
+.welcome-panel:hover {
+  transform: scale(1.01);
+}
+
+/* Estilo del título de bienvenida */
+.titulo-bienvenida {
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem); /* Escalable */
+  font-weight: bold;
+  color: #3b3604;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Lista de beneficios */
+.welcome-panel ul li {
+  font-size: 1.0625rem; /* 17px */
+}
+
+/* Frase de seguridad */
+.welcome-panel p.fst-italic {
+  color: #ecf0f1;
+  font-size: 1rem; /* 16px */
+}
+
+/* Animación de entrada */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .dashboard-layout {
+    flex-direction: column;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .welcome-panel {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .titulo-bienvenida {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+  }
+
+  .welcome-panel ul li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-bienvenida {
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+  }
+
+  .welcome-panel {
+    padding: 1rem;
+  }
+
+  .welcome-panel p.fst-italic {
+    font-size: 0.9rem;
+  }
+}

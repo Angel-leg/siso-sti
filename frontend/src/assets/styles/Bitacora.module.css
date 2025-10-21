@@ -1,0 +1,67 @@
+.gestionContainer {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #3d918c, #29b9b9);
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.tablaWrapper {
+  overflow-x: auto;
+  margin-top: 30px;
+}
+
+.tablaBitacora {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.tablaBitacora th {
+  background-color: #2c3e50;
+  color: white;
+  padding: 12px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+}
+
+.tablaBitacora td {
+  background-color: white;
+  color: #333;
+  padding: 14px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.tablaBitacora tr:hover td {
+  background-color: #e0f7fa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gestionContainer {
+    padding: 25px;
+  }
+
+  .titulo {
+    font-size: 26px;
+  }
+
+  .tablaBitacora th,
+  .tablaBitacora td {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

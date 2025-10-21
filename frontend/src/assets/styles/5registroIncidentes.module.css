@@ -1,0 +1,183 @@
+.gestion-containerRI {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #3d918c, #29b9b9);
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.gestion-containerRI h2 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 30px;
+  color: #fdfdfd;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.acciones-superior {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.input-buscar {
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: none;
+  width: 280px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.input-buscar:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.tabla-wrapperRI {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.tabla-reportesRI {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  background-color: transparent;
+}
+
+.tabla-reportesRI th {
+  background-color: #2c3e50;
+  color: white;
+  padding: 12px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+}
+
+.tabla-reportesRI td {
+  background-color: white;
+  color: #333;
+  text-align: center;
+  padding: 14px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+.seleccionado td {
+  background-color: #bbdefb !important;
+  color: #000;
+}
+
+.form-containerRI {
+  background: white;
+  color: #333;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 755px;
+  margin: 30px auto;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.form-boxRI {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-boxRI h3 {
+  text-align: center;
+  color: #3b3604;
+  font-size: 28px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.form-boxRI input,
+.form-boxRI select,
+.form-boxRI textarea {
+  margin-bottom: 18px;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #b2dfdb;
+  border-radius: 12px;
+  background: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.form-boxRI input:focus,
+.form-boxRI select:focus,
+.form-boxRI textarea:focus {
+  outline: none;
+  border-color: #26a69a;
+  box-shadow: 0 0 6px rgba(38, 166, 154, 0.4);
+}
+
+.trabajadores-container {
+  margin-top: 20px;
+}
+
+.trabajadores-container h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #3b3604;
+}
+
+.trabajadores-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.trabajadores-table th,
+.trabajadores-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+.trabajadores-table th {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.trabajadores-table td {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.preview-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.preview-container img {
+  max-width: 300px;
+  max-height: 300px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form-containerRI {
+    padding: 25px;
+  }
+
+  .acciones-superior {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-buscar {
+    width: 100%;
+    max-width: 300px;
+  }
+}
