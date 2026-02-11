@@ -37,7 +37,7 @@ services:
     build: ./frontend
     container_name: frontend
     expose:
-      - "80"  # Exponemos el puerto 80 internamente para que nginx lo vea
+      - "80"  
     depends_on:
       - backend
     networks:
