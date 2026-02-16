@@ -1,7 +1,8 @@
 FROM node:18-alpine
 
 # Instalar netcat (nc)
-RUN apk add --no-cache netcat-openbsd
+# RUN apk add --no-cache netcat-openbsd
+RUN apk add --no-cache netcat-openbsd bash
 
 WORKDIR /app
 
