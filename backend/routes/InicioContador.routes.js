@@ -177,7 +177,7 @@ router.post('/reiniciar-por-incidente', authMiddleware(['MASTER', 'ADMINISTRADOR
 });
 
 // Obtener el estado actual
-router.get('/actual', authMiddleware(['MASTER', 'ADMINISTRADOR', 'SISO'], 'inicio-contador'), async (req, res) => {
+router.get('/actual', authMiddleware(['MASTER', 'ADMINISTRADOR', 'SISO', 'TECNICO'], 'inicio-contador'), async (req, res) => {
   try {
     const [resultado] = await db.query(
       'SELECT * FROM dias_sin_accidentes ORDER BY id_contador DESC LIMIT 1'

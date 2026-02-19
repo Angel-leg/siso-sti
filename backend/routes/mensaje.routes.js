@@ -5,7 +5,7 @@ const authMiddleware = require('../middlewares/authMiddleware');
 const registrarBitacora = require('../utils/bitacoraLogger');
 
 // Obtener todos los mensajes
-router.get('/', authMiddleware(['MASTER', 'ADMINISTRADOR', 'SISO'], 'mensaje-dia'), async (req, res) => {
+router.get('/', authMiddleware(['MASTER', 'ADMINISTRADOR', 'SISO','TECNICO'], 'mensaje-dia'), async (req, res) => {
   try {
     await db.query(`
       UPDATE anuncios

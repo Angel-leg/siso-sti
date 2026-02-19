@@ -38,13 +38,16 @@ const moduleAccess = {
     "contador-dias",
     "alertas",
     "mensaje-dia",
-    "clasificacion-reportes"
+    "clasificacion-reportes",
+    "inicio-contador"
   ],
   TECNICO: [
     "dashboard",
     "registro-incidentes",
     "reportes",
-    "contador-dias"
+    "contador-dias",
+    "mensaje-dia",
+    "inicio-contador"
   ]
 };
 
